@@ -1,0 +1,21 @@
+body{
+    /*background-image: url(../image/image4.jpg);*/
+    /*opacity: 20%;*/
+}
+*{
+    margin: 0;
+}
+
+#out{
+
+    margin-left: 350px;
+    margin-top: 150px;
+    height: 200px;
+    width: 500px;
+    /*border: solid black 1px;*/
+    /*background-color: black;*/
+}
+
+.reader-label{
+    align-content: center;
+}

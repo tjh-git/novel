@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>小说网站</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/admin-register.css"/>
+    <style type="text/css">
+        body {
+            background-image: url("image/image4.jpg");
+            background-size: 100%;
+        }
+
+        #label {
+            /*margin-left: 230px;*/
+            margin-bottom: 10px;
+            position: relative;
+            top: 22%;
+            left: 48%;
+            /*background-color: #0f0f0f;*/
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">读者</a>
+        </li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">作者</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">管理员</a></li>
+        <!--         <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>-->
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div id="out">
+                <div>
+                    <label id="label">读者界面</label>
+                </div>
+                <form class="form-horizontal" method="post" action="readerLoginServlet">
+
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">账号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Username"
+                                   name="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password"
+                                   name="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">登录</button>
+                            <a href="reader/reader-register.jsp">
+                                <button type="button" class="btn btn-default" style="margin-left: 10px">注册</button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+
+
+            <div id="out">
+
+
+                    <form class="form-horizontal" method="post" action="authorLoginServlet">
+                        <div>
+                            <label id="label">作者界面</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Username"
+                                       name="username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password"
+                                       name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">登录</button>
+                                <a href="author/addAuthor.jsp">
+                                    <button type="button" class="btn btn-default" style="margin-left: 10px">注册</button>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+
+
+            <div id="out">
+                <div>
+                    <label id="label">管理员界面</label>
+                </div>
+                <form class="form-horizontal" method="post" action="adminLoginServlet">
+
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">账号</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email"
+                                   name="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password"
+                                   name="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--        <div role="tabpanel" class="tab-pane" id="settings">4</div>-->
+    </div>
+
+</div>
+</body>
+</html>

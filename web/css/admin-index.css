@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+.out{
+    height: 80%;
+    width: 80%;
+    /*background-color: black;*/
+    margin-left: 100px;
+}
+.tab-content{
+    margin-top: 30px;
+}
